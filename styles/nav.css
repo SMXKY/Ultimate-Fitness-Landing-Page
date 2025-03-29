@@ -1,14 +1,23 @@
 .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 100;
   /* background-color: var(--Text-color); */
+  /* background-color: red; */
+}
+
+.nav-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1.5rem;
+  background: transparent;
+  transition: ease-in-out 0.2s;
+  max-width: 200rem;
+  margin: 0 auto;
 }
 
 .logo img {
@@ -70,6 +79,10 @@
   transform: translateY(-9px) rotate(-45deg);
 }
 
+.scroll-nav {
+  background-color: var(--Text-color);
+}
+
 @media (max-width: 1024px) {
   .nav-links {
     display: none;
@@ -88,7 +101,7 @@
     width: 5.5rem;
   }
 
-  .nav-bar {
+  .nav-items {
     padding: 1rem;
     align-items: center;
   }

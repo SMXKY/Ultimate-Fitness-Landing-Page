@@ -50,7 +50,7 @@ export const sideBarNavigateAnimation = () => {
         link.classList.remove("side-bar-link-isOn")
       );
 
-      console.log("side-bar-link-isOn");
+      // console.log("side-bar-link-isOn");
       link.classList.add("side-bar-link-isOn");
     });
   });
