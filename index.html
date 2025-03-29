@@ -3,7 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ultimate Fitness</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/utilities.css" />
+    <link rel="stylesheet" href="./styles/hero-section.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/side-bar.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Navigation Bar -->
+
+    <nav class="nav-bar">
+      <a href="/" class="logo">
+        <img src="./assets/logo.png" alt="ultimate-fitness-logo" />
+      </a>
+
+      <div class="nav-links js-nav-links-container">
+        <a href="#" class="nav-link text-lg js-nav-link isOn">Home</a>
+        <a href="#" class="nav-link text-lg js-nav-link">About</a>
+        <a href="#" class="nav-link text-lg js-nav-link">Services</a>
+        <a href="#" class="nav-link text-lg js-nav-link">Reviews</a>
+        <span class="tracker js-nav-link-tracker"></span>
+      </div>
+
+      <div class="cta-btn-container nav-cta-btn">
+        <button class="cta-btn text-lg">Contact Us</button>
+      </div>
+
+      <div class="hamburger-menu js-harmbuger-menu">
+        <div class="left"></div>
+        <div class="mid"></div>
+        <div class="right"></div>
+      </div>
+    </nav>
+
+    <nav class="side-bar js-side-bar">
+      <a href="/" class="side-bar-link side-bar-link-isOn js-nav-link-side-bar">
+        <p class="text-base js-link-text">Home</p>
+        <div></div>
+      </a>
+
+      <a href="#" class="side-bar-link js-nav-link-side-bar">
+        <p class="text-base js-link-text">About</p>
+        <div></div>
+      </a>
+
+      <a href="#" class="side-bar-link js-nav-link-side-bar">
+        <p class="text-base js-link-text">Services</p>
+        <div></div>
+      </a>
+
+      <a href="#" class="side-bar-link js-nav-link-side-bar">
+        <p class="text-base js-link-text">Reviews</p>
+        <div></div>
+      </a>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="hero-section"></div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
 </html>
