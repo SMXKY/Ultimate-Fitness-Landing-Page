@@ -6,6 +6,7 @@
   z-index: 100;
   /* background-color: var(--Text-color); */
   /* background-color: red; */
+  transition: ease-in-out 0.3s;
 }
 
 .nav-items {
@@ -15,7 +16,6 @@
   justify-content: space-between;
   padding: 1.5rem;
   background: transparent;
-  transition: ease-in-out 0.2s;
   max-width: 200rem;
   margin: 0 auto;
 }

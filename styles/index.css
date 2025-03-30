@@ -44,3 +44,10 @@ body {
   width: 14.2rem;
   padding: 0.9rem 0rem;
 }
+
+.section-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--cta-color);
+  margin-bottom: 1rem;
+}

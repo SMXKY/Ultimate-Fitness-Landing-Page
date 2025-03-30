@@ -1,0 +1,22 @@
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-us-content {
+  padding: 1.5rem;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 200rem;
+}
+
+.about-us-text {
+  flex-shrink: 0;
+  color: var(--Text-color);
+  font-size: 1rem;
+  line-height: 30px;
+  width: 50rem;
+}
