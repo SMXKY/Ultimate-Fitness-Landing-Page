@@ -21,6 +21,7 @@ export const onScrollAnimations = () => {
 
   const servicesTitleElement = document.querySelector(".js-services-title");
   const serviceCards = document.querySelectorAll(".js-service-card");
+  const reviewsTitle = document.querySelector(".js-review-title");
 
   observeAndAnimate(aboutUsTitleElement, "show-title");
   observeAndAnimate(aboutUsTextElement, "show-about-us-text");
@@ -29,6 +30,7 @@ export const onScrollAnimations = () => {
   serviceCards.forEach((card) => {
     observeAndAnimate(card, "show-service");
   });
+  observeAndAnimate(reviewsTitle, "show-review-title");
 };
 
 export const snapSections = () => {

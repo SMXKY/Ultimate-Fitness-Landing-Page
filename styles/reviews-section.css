@@ -1,0 +1,157 @@
+.reviews-section {
+  width: 100%;
+  scroll-margin-top: 8rem;
+}
+
+.reviews-content {
+  width: 100%;
+  padding: 1.5rem;
+  max-width: 200rem;
+  margin: 0 auto;
+}
+
+.all-reviews {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  padding: 0.5rem;
+  align-items: flex-start;
+  /* height: 26rem; */
+  /* background-color: red; */
+  scroll-behavior: smooth;
+}
+
+.all-reviews::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  box-shadow: var(--box-shadow);
+  padding: 1.8rem 2rem;
+  border-radius: 0.5rem;
+  min-height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 2rem;
+  transition: ease-in-out 0.2s;
+}
+
+.review-text {
+  width: 28rem;
+  color: var(--Text-color);
+}
+
+.reviewer-profile-picture {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
+}
+
+.responsive-text-incresae {
+  margin: 1rem 0rem;
+}
+
+.reviewer-information {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+}
+
+.reviewer-name {
+  font-weight: 500;
+  color: var(--Text-color);
+  font-size: 1.2rem;
+}
+
+.reviewer-email {
+  color: var(--sub-text-gray);
+  font-size: 1rem;
+}
+
+.review-see-more-btn {
+  color: var(--cta-color);
+  /* margin-top: 1rem; */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.review-see-more-btn:hover {
+  opacity: 0.8;
+}
+
+.mut-see-more-btn {
+  color: var(--mutted);
+}
+
+.mut-see-more-btn:hover {
+  opacity: 1;
+}
+
+.review-tittle {
+  margin-top: 10rem;
+  transition: ease-in-out 1s;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.show-review-title {
+  opacity: 1;
+  filter: blur(0);
+  margin-top: 0rem;
+}
+
+@media (max-width: 800px) {
+  .review-card {
+    min-height: 23rem;
+  }
+
+  .review-text {
+    width: 24rem;
+    color: var(--Text-color);
+    text-align: justify;
+  }
+
+  .reviewer-profile-picture {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .reviewer-name {
+    font-size: 1.1rem;
+  }
+
+  .reviewer-email {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    min-height: 16rem;
+  }
+
+  .review-text {
+    width: 26rem;
+    font-size: 0.8rem;
+  }
+
+  .reviewer-profile-picture {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .reviewer-name {
+    font-size: 1rem;
+  }
+
+  .reviewer-email {
+    font-size: 0.9rem;
+  }
+}

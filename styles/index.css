@@ -16,6 +16,8 @@ html {
   --primary-color: #ffffff;
   --Text-color: #000000;
   --box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  --sub-text-gray: #434343;
+  --mutted: #434343;
 }
 
 body {

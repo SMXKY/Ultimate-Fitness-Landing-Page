@@ -15,6 +15,9 @@ import {
   onScrollAnimations,
   snapSections,
 } from "./animations/onScroll.animation.js";
+import { seeMoreFunctionalityForReviews } from "./funtionalities/seeMore.functionality.js";
+import { renderingReviews } from "./renders/renderingReviews.js";
+import { autoScrollAnimation } from "./animations/autoScroll.animation.js";
 
 snapBackToCurrentLocationLink();
 navLinksAnimation();
@@ -26,3 +29,6 @@ heroTextAnimation();
 startTypingAnimation();
 onScrollAnimations();
 // snapSections();
+renderingReviews();
+seeMoreFunctionalityForReviews();
+autoScrollAnimation();
