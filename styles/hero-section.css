@@ -11,6 +11,7 @@
     ),
     url("../assets/Hero-Image.png") lightgray 50% / cover no-repeat;
   height: 100vh;
+  max-height: 150rem;
   background-position: center;
   background-size: cover;
   max-width: 100vw;

@@ -11,6 +11,10 @@ import {
   typeTextAnimation,
   startTypingAnimation,
 } from "./animations/HeroText.animation.js";
+import {
+  onScrollAnimations,
+  snapSections,
+} from "./animations/onScroll.animation.js";
 
 snapBackToCurrentLocationLink();
 navLinksAnimation();
@@ -20,3 +24,5 @@ hamburgerMenuAnimation();
 navBarAnimation();
 heroTextAnimation();
 startTypingAnimation();
+onScrollAnimations();
+// snapSections();

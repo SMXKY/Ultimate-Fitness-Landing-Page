@@ -9,6 +9,10 @@
   transition: ease-in-out 0.3s;
 }
 
+.transperent-nav {
+  backdrop-filter: blur(4px);
+}
+
 .nav-items {
   width: 100%;
   display: flex;

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  scroll-margin-top: 8rem;
 }
 
 .about-us-content {
@@ -11,6 +12,8 @@
   justify-content: space-between;
   width: 100%;
   max-width: 200rem;
+  margin: 0 auto;
+  /* background-color: red; */
 }
 
 .about-us-text {
@@ -19,4 +22,68 @@
   font-size: 1rem;
   line-height: 30px;
   width: 50rem;
+  text-align: justify;
+  margin-top: 5.5rem;
+  transition: ease-in-out 1.5s;
+  opacity: 0;
+}
+
+.show-about-us-text {
+  margin-top: 0rem;
+  opacity: 1;
+}
+
+.main-about-us-image {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background: url("../assets/about-us-image.png");
+  background-size: contain;
+  position: relative;
+}
+
+.ultimate-finess-logo {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1.2rem;
+  left: -1rem;
+  box-shadow: var(--box-shadow);
+  animation: spin360 10s linear infinite;
+  object-fit: contain;
+  background-color: white;
+}
+
+@keyframes spin360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1170px) {
+  .main-about-us-image {
+    display: none;
+  }
+  .ultimate-finess-logo {
+    display: none;
+  }
+
+  .about-us-text {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-us-text {
+    font-size: 0.8rem;
+  }
+
+  .about-us-content {
+    padding: 1rem;
+  }
 }
