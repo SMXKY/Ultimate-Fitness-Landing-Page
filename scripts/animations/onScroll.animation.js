@@ -30,6 +30,10 @@ export const onScrollAnimations = () => {
   );
   const contactForm = document.querySelector(".js-contact-us-form");
 
+  const leftFooter = document.querySelector(".js-left-footer-content");
+  const rightFooter = document.querySelector(".js-right-footer");
+  const footerLinks = document.querySelectorAll(".js-footer-link");
+
   observeAndAnimate(aboutUsTitleElement, "show-title");
   observeAndAnimate(aboutUsTextElement, "show-about-us-text");
 
@@ -45,6 +49,12 @@ export const onScrollAnimations = () => {
     observeAndAnimate(entry, "show-contact-information-entry");
   });
   observeAndAnimate(contactForm, "show-contact-form");
+
+  observeAndAnimate(leftFooter, "show-left-footer");
+  observeAndAnimate(rightFooter, "show-right-footer");
+  footerLinks.forEach((link) => {
+    observeAndAnimate(link, "show-footer-link-el");
+  });
 };
 
 export const snapSections = () => {

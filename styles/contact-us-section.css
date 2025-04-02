@@ -7,13 +7,13 @@
 .contact-us-main-title {
   opacity: 0;
   filter: blur(1px);
-  margin-top: 2rem;
+  transform: translateY(-10rem);
 }
 
 .show-contact-us-title {
   opacity: 1;
   filter: blur(0px);
-  margin-top: 0rem;
+  transform: translateY(0rem);
 }
 
 .contact-us-content {

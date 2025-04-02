@@ -92,7 +92,7 @@
 }
 
 .review-tittle {
-  margin-top: 10rem;
+  transform: translateY(-10rem);
   transition: ease-in-out 1s;
   opacity: 0;
   filter: blur(4px);
@@ -101,7 +101,7 @@
 .show-review-title {
   opacity: 1;
   filter: blur(0);
-  margin-top: 0rem;
+  transform: translateY(0rem);
 }
 
 @media (max-width: 800px) {
