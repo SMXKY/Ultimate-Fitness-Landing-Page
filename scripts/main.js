@@ -18,6 +18,7 @@ import {
 import { seeMoreFunctionalityForReviews } from "./funtionalities/seeMore.functionality.js";
 import { renderingReviews } from "./renders/renderingReviews.js";
 import { autoScrollAnimation } from "./animations/autoScroll.animation.js";
+import { sendEmailFunctionality } from "./funtionalities/sendEmail.functionality.js";
 
 snapBackToCurrentLocationLink();
 navLinksAnimation();
@@ -32,3 +33,4 @@ onScrollAnimations();
 renderingReviews();
 seeMoreFunctionalityForReviews();
 autoScrollAnimation();
+sendEmailFunctionality();

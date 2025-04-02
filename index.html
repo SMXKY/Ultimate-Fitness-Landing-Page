@@ -13,37 +13,39 @@
     <link rel="stylesheet" href="./styles/about-us-section.css" />
     <link rel="stylesheet" href="./styles/services.css" />
     <link rel="stylesheet" href="./styles/reviews-section.css" />
+    <link rel="stylesheet" href="./styles/contact-us-section.css" />
+    <link rel="stylesheet" href="./styles/map.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
 
     <nav class="nav-bar js-nav-bar transperent-nav">
       <div class="nav-items">
-        <a href="#section0" class="logo">
+        <a href="#Home" class="logo">
           <img src="./assets/logo.png" alt="ultimate-fitness-logo" />
         </a>
 
         <div class="nav-links js-nav-links-container">
-          <a
-            href="#section0"
-            class="nav-link text-lg js-nav-link js-home-link isOn"
+          <a href="#Home" class="nav-link text-lg js-nav-link js-home-link isOn"
             >Home</a
           >
-          <a href="#section1" class="nav-link text-lg js-nav-link js-about-link"
+          <a href="#About" class="nav-link text-lg js-nav-link js-about-link"
             >About</a
           >
           <a
-            href="#section2"
+            href="#Services"
             class="nav-link text-lg js-nav-link js-services-link"
             >Services</a
           >
-          <a href="#section3" class="nav-link text-lg js-nav-link">Reviews</a>
+          <a href="#Reviews" class="nav-link text-lg js-nav-link">Reviews</a>
           <span class="tracker js-nav-link-tracker"></span>
         </div>
 
-        <div class="cta-btn-container nav-cta-btn">
-          <button class="cta-btn text-lg">Contact Us</button>
-        </div>
+        <a href="#Contact">
+          <div class="cta-btn-container nav-cta-btn">
+            <button class="cta-btn text-lg">Contact Us</button>
+          </div>
+        </a>
 
         <div class="hamburger-menu js-harmbuger-menu">
           <div class="left"></div>
@@ -55,24 +57,24 @@
 
     <nav class="side-bar js-side-bar">
       <a
-        href="#ssection0"
+        href="#Home"
         class="side-bar-link side-bar-link-isOn js-nav-link-side-bar"
       >
         <p class="text-base js-link-text">Home</p>
         <div></div>
       </a>
 
-      <a href="#section1" class="side-bar-link js-nav-link-side-bar">
+      <a href="#About" class="side-bar-link js-nav-link-side-bar">
         <p class="text-base js-link-text">About</p>
         <div></div>
       </a>
 
-      <a href="#section2" class="side-bar-link js-nav-link-side-bar">
+      <a href="#Services" class="side-bar-link js-nav-link-side-bar">
         <p class="text-base js-link-text">Services</p>
         <div></div>
       </a>
 
-      <a href="#section3" class="side-bar-link js-nav-link-side-bar">
+      <a href="#Reviews" class="side-bar-link js-nav-link-side-bar">
         <p class="text-base js-link-text">Reviews</p>
         <div></div>
       </a>
@@ -80,7 +82,7 @@
 
     <!-- Hero Section -->
 
-    <section class="hero-section js-home-seciton" id="section0">
+    <section class="hero-section js-home-seciton" id="Home">
       <div class="hero-section-content">
         <div class="all-hero-text">
           <h1 class="hero-text">
@@ -99,9 +101,11 @@
         </div>
 
         <div class="hero-btns">
-          <div class="cta-btn-container">
-            <button class="cta-btn text-lg">Get In Touch</button>
-          </div>
+          <a href="#Contact">
+            <div class="cta-btn-container">
+              <button class="cta-btn text-lg">Get In Touch</button>
+            </div>
+          </a>
 
           <p class="social-proof-text text-lg">
             12,00 current members world wide
@@ -112,7 +116,7 @@
 
     <!-- About us section -->
 
-    <section class="about-us-section js-about-section" id="section1">
+    <section class="about-us-section js-about-section" id="About">
       <div class="about-us-content">
         <div class="about-us-left">
           <p class="section-title js-about-us-title about-us-title">About Us</p>
@@ -142,7 +146,7 @@
 
     <!-- Services section -->
 
-    <section class="services-section" id="section2">
+    <section class="services-section" id="Services">
       <div class="services-content">
         <div class="services-header">
           <p class="section-title services-title js-services-title">Services</p>
@@ -193,7 +197,7 @@
 
     <!-- Reviews Section -->
 
-    <section class="reviews-section" id="section3">
+    <section class="reviews-section" id="Reviews">
       <div class="reviews-content">
         <div class="services-header">
           <p class="section-title js-review-title review-tittle">Reviews</p>
@@ -205,11 +209,118 @@
 
     <!-- Contact us Section -->
 
-    <section class="contact-us-section">
-      <div class="services-header">
-        <p class="section-title">Contact Us</p>
+    <section class="contact-us-section" id="Contact">
+      <div class="contact-us-content">
+        <div class="services-header">
+          <p class="section-title contact-us-main-title js-contact-us-title">
+            Contact Us
+          </p>
+        </div>
+
+        <div class="contact-sections">
+          <div class="contact-infomation">
+            <div class="contact-information-entry js-contact-information-entry">
+              <div class="head">
+                <img
+                  src="./assets/phone-icon.png"
+                  alt="contact-icon"
+                  class="contact-info-img"
+                />
+                <p class="contact-title">Call us</p>
+              </div>
+
+              <p class="contact-info-content">(+237) 683285102</p>
+            </div>
+
+            <div class="contact-information-entry js-contact-information-entry">
+              <div class="head">
+                <img
+                  src="./assets/whatsapp-icon.png"
+                  alt="contact-icon"
+                  class="contact-info-img"
+                />
+                <p class="contact-title">Text us in Whatsapp</p>
+              </div>
+
+              <p class="contact-info-content">(+237) 690778690</p>
+            </div>
+
+            <div class="contact-information-entry js-contact-information-entry">
+              <div class="head">
+                <img
+                  src="./assets/email-icon.png"
+                  alt="contact-icon"
+                  class="contact-info-img"
+                />
+                <p class="contact-title">Email us</p>
+              </div>
+
+              <p class="contact-info-content">ultimatefitnessgym@gmail.com</p>
+            </div>
+
+            <div class="contact-information-entry js-contact-information-entry">
+              <div class="head">
+                <img
+                  src="./assets/location-icon.png"
+                  alt="contact-icon"
+                  class="contact-info-img"
+                />
+                <p class="contact-title">Meet us</p>
+              </div>
+
+              <p class="contact-info-content">Mile 2 Nkwen, Bamenda</p>
+            </div>
+          </div>
+          <p class="sub-contact-heading">Send us a message</p>
+          <form action="" class="contact-form js-contact-us-form">
+            <div class="user-information-inputs">
+              <input type="text" placeholder="Name" class="js-conatc-name" />
+              <input
+                type="email"
+                placeholder="Email"
+                class="js-contact-email"
+              />
+            </div>
+
+            <input
+              type="text"
+              placeholder="Subject"
+              class="subject-input js-email-subject"
+            />
+
+            <textarea
+              name=""
+              id=""
+              placeholder="Message"
+              class="message-input js-email-body"
+              rows="15"
+            ></textarea>
+
+            <input
+              type="submit"
+              value="Submit"
+              class="contact-form-submit-btn js-contat-submit-btn"
+            />
+          </form>
+        </div>
       </div>
     </section>
+
+    <!-- gym map -->
+
+    <div class="map">
+      <div class="map-content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63489.735892707926!2d10.1757121043213!3d5.979796108267333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scm!4v1743599379149!5m2!1sen!2scm"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
 
     <script src="./scripts/main.js" type="module"></script>
   </body>
