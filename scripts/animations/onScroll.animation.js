@@ -76,7 +76,6 @@ export const snapSections = () => {
     navLinkElements.forEach((link) => link.classList.remove("isOn"));
 
     linkToSnap.classList.add("isOn");
-    console.log("heyy");
     snapBackToCurrentLocationLink();
   };
 
@@ -86,7 +85,7 @@ export const snapSections = () => {
   const homeSection = document.querySelector(".js-home-seciton");
   const homeLink = document.querySelector(".js-home-link");
 
-  const servicesSection = document.getElementById("section2");
+  const servicesSection = document.getElementById(".js-service-section");
   const servicesLink = document.querySelector(".js-services-link");
 
   observeAndMoveLInkCursor(aboutSection, aboutLink);

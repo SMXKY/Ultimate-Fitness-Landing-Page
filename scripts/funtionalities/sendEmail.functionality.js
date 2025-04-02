@@ -14,10 +14,15 @@ export const sendEmailFunctionality = () => {
     const emailTemplate = `
     Name: ${emailInfo.name}
     Email: ${emailInfo.email}
+    
     ${emailInfo.body}
     `;
 
-    window.location.href = `mailto:tallamichael007@gmail.com?subject=${emailInfo.subject}&body=${emailTemplate}`;
+    const mailtoLink = `mailto:tallamichael007@gmail.com?subject=${encodeURIComponent(
+      emailInfo.subject
+    )}&body=${encodeURIComponent(emailTemplate)}`;
+
+    window.location.href = mailtoLink;
 
     document.querySelector(".js-conatc-name").value = "";
     document.querySelector(".js-contact-email").value = "";
