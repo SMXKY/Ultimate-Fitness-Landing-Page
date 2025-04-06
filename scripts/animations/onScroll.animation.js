@@ -88,7 +88,10 @@ export const snapSections = () => {
   const servicesSection = document.getElementById(".js-service-section");
   const servicesLink = document.querySelector(".js-services-link");
 
+  const reviewsSection = document.getElementById(".js-service-section");
+  const reviewsLink = document.querySelector(".js-services-link");
+
   observeAndMoveLInkCursor(aboutSection, aboutLink);
   observeAndMoveLInkCursor(homeSection, homeLink);
-  observeAndMoveLInkCursor(servicesSection, servicesLink);
+  // observeAndMoveLInkCursor(servicesSection, servicesLink);
 };

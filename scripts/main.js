@@ -8,7 +8,6 @@ import { hamburgerMenuAnimation } from "./animations/harmbugerMenu.animation.js"
 import { navBarAnimation } from "./animations/navBar.animation.js";
 import {
   heroTextAnimation,
-  typeTextAnimation,
   startTypingAnimation,
 } from "./animations/HeroText.animation.js";
 import {

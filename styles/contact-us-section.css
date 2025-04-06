@@ -87,7 +87,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 43rem;
+  height: 42rem;
   opacity: 0;
   transition: ease-in-out 1s;
   /* background-color: rebeccapurple; */
